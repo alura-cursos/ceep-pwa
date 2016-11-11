@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background: #E8E8E8;
+}
+
+.container {
+	padding: 0 10%;
+}
+
+:focus {
+  outline-color: #3b99fc;
+  outline-style: solid;
+  outline-width: 3px;
+}
+
+#mudaLayout {
+  display: none;
+}
+
+@media (min-width: 610px){
+
+	#mudaLayout{
+		display: inline-block;
+	}
+
+}

@@ -1,0 +1,22 @@
+.loginStatus {
+    display: inline-block;
+    text-align: left;
+    font-size: 1rem;
+    vertical-align: middle;
+    font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+}
+
+.loginStatus-usuario {
+    font-weight: bold;
+}
+
+.loginStatus-sair {
+    display: inline-block;
+    font-size: 1em;
+    padding: .2em .5em;
+	max-width: 4.5em;
+	border: none;
+	background: rgba(0,0,0,.25);
+	color: white;
+    margin-left: .5em;
+}

@@ -1,0 +1,32 @@
+.loginForm {
+    display: inline-block;
+    text-align: left;
+    font-family: "Lucida Grande", "Helvetica", "Arial", sans-serif;
+}
+
+.loginForm-input {
+    border: none;
+	padding: .5em;
+}
+
+.loginForm-label {
+    text-align: left;
+    display: block;
+    margin-bottom: .4em;
+}
+
+.loginForm-label,
+.loginForm-input,
+.loginForm-submit{
+    font-size: 1em;
+    vertical-align: middle;
+}
+
+.loginForm-submit {
+    padding: .5em;
+	max-width: 4.5em;
+	border: none;
+	background: #f05450;
+	color: white;
+    margin-left: .5em;
+}
