@@ -16,6 +16,15 @@ const Mural = (function(_render, Filtro){
             salvaCartoes()
             render()
         })
+        const imagens = Cartao.pegaImagens(cartao)
+        if(imagens){
+            imagens
+                .map(img => new Request(img))
+                .forEach(request => fetch(request).then(response => caches.open("ceep-images").then(cache =>{
+                    return cache.put(request, response)
+                })))
+
+        }
     }
 
     function pegaCartoesUsuario(){
