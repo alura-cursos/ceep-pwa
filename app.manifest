@@ -1,0 +1,12 @@
+{
+    "name": "Ceep",
+    "start_url" : "./",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "img/caelum-logo-256.png",
+            "sizes" : "256x256",
+            "type" : "image/png"
+        }
+    ]
+}

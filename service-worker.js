@@ -1,4 +1,4 @@
-let versao = 7
+let versao = 8
 
 let arquivos = [
 "/",
