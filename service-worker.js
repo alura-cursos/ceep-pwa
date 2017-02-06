@@ -1,3 +1,5 @@
+let versao = 7
+
 let arquivos = [
 "/",
 "css/estilos.css",
@@ -34,8 +36,16 @@ let arquivos = [
 
 self.addEventListener("install", function(){
     console.log("Instalou")
-    caches.open("ceep-arquivos").then(cache => {
+})
+
+self.addEventListener("activate", function(){
+    caches.open("ceep-arquivos-" + versao).then(cache => {
         cache.addAll(arquivos)
+            .then(function(){
+                caches.delete("ceep-arquivos-" + (versao - 1 ))   
+                caches.delete("ceep-arquivos")   
+            })
+        
     })
 })
 
